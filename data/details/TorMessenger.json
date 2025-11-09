@@ -1,0 +1,38 @@
+{
+  "title": "Tor Messenger",
+  "main_image": "img/paradox1.png",
+  "long_description": [
+    "A high-security, self-hosted chat app that routes all communication over the Tor network. It uses GPG to ensure only you and your friends can read messages, which are deleted from the server after being read. It's built for extreme privacy, giving users total control over their data, but requires technical skill to set up."
+  ],
+  "technologies": [
+    "Unity",
+    "C#",
+    "Ad Mediation",
+    "In App Purchases",
+    "Xcode",
+    "Google Play Console",
+    "Apple Store Connect"
+  ],
+  "gallery": [
+    {
+      "image": "https://images.unsplash.com/photo-1544400262-b91c0ffb4718?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MTl8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzA4NjQzNjUwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "caption": "Overview Dashboard Interface",
+      "description": "This image displays the primary dashboard view, showcasing a clean, modern UI with various data widgets. Key performance indicators (KPIs) are prominently featured, offering an at-a-glance summary of critical metrics."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1558494949-a218acb9ee56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MTl8MHwxfHNlYXJjaHwzfHxkYXRhJTIwYW5hbHlzaXMlMjB0b29sc3xlbnwwfHx8fDE3MDg2NDM2NTF8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "caption": "Detailed Analytics & Filtering",
+      "description": "Here, the user can delve into more granular data with interactive charts and filtering options. The sidebar allows for dynamic selection of date ranges, user segments, and specific metrics to refine the analysis."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1579547530386-3532f50d996e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MTl8MHwxfHNlYXJjaHw0fHxyZXNwb25zaXZlJTIwd2ViJTIwZGVzaWdufGVufDB8fHx8MTcwODY0MzY1Mnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "caption": "Responsive Mobile Layout",
+      "description": "This screenshot demonstrates the dashboard's fully responsive design, adapting seamlessly to smaller screens. Essential information remains accessible and easy to navigate, ensuring a consistent user experience across devices."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1510915228389-fe7be6ce2792?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MTl8MHwxfHNlYXJjaHw0fHxwcm9ncmFtbWluZyUyMGNvbnNvbGV8ZW58MHx8fHwxNzA4NjQzNjUzfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "caption": "Behind-the-Scenes Code Snippet",
+      "description": "A glimpse into the underlying code structure, highlighting a snippet of the JavaScript logic responsible for data fetching and state management. This showcases the clean, commented, and modular codebase."
+    }
+  ]
+}
