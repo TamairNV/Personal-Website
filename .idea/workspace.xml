@@ -5,26 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6463c74b-33ad-4743-90a4-7a027fc92754" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/details/Paradox.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/details/TorMessenger.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/education.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/projects.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/education.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/A*Icon.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/MapGif.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/face.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/itch-io.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/linked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/paradox1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/torIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education.html" beforeDir="false" afterPath="$PROJECT_DIR$/education.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -54,8 +42,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "disable.download.node.interpreter.editor.notification": "true",
     "git-widget-placeholder": "main",
@@ -95,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762633541388</updated>
-      <workItem from="1762633542517" duration="19227000" />
+      <workItem from="1762633542517" duration="20447000" />
     </task>
     <servers />
   </component>
