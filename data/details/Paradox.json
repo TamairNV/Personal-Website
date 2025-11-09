@@ -22,23 +22,21 @@
     "Google Play Console",
     "Apple Store Connect"
   ],
-
   "gallery": [
     {
       "image": "img/Paradox/Slide1Paradox.png",
       "caption": "Recording Your Time 'Footprint'",
-      "description": "To allow you to invert, the game constantly records 'Moments' of your Position, Direction, and IsMoving status (15 times a second). This data acts like a 'footprint' in time. I smooth this data out so when you watch your past selves, their movement is fluid, not jerky."
+      "description": "<p>To allow inversion, the game constantly records 'Moments' of <strong>Position</strong>, <strong>Direction</strong>, and <strong>IsMoving</strong> status (15 times a second). This data acts like a 'footprint' in time. I smooth this data so when you watch your past selves, their movement is fluid, not jerky.</p>"
     },
     {
       "image": "img/Paradox/Slide2Paradox.png",
       "caption": "Visualizing Your Path Through Time",
-      "description": "This shows how you exist on the timeline. Top Row (Green): This is your original path, moving forward in time. Middle Row (Red): You've 'inverted.' You are now moving backward from Moment 4 to Moment 2, watching your original self's actions happen in reverse. Bottom Row (Green): You 're-vert' at Moment 2. You're moving forward again, but now you can co-exist with your other selves."
+      "description": "<p>This diagram visualizes how you exist on the timeline:</p><ul><li><strong>Top Row (Green):</strong> This is your original path, moving forward in time.</li><li><strong>Middle Row (Red):</strong> You've 'inverted,' moving backward from Moment 4 to Moment 2 and watching your original self's actions in reverse.</li><li><strong>Bottom Row (Green):</strong> You 're-vert' at Moment 2, moving forward again and co-existing with your other selves.</li></ul>"
     },
     {
       "image": "img/Paradox/Slide3Paradox.png",
       "caption": "How All Your 'Selves' Appear at Once",
-      "description": "This is the magic that lets you see multiple 'yous.' The dictionary groups all your selves by the 'Moment' they are in. For example, at 'Moment 3,' the game looks up that key and finds: Your original 'past-past self' (top row), Your 'inverted self' (middle row), and Your current self (bottom row). It then displays all three on-screen, all moving in their respective directions."
+      "description": "<p>This shows the magic that lets you see multiple 'yous' at once. I use a dictionary to group all 'selves' by the 'Moment' they are in.</p><p>For example, at <strong>'Moment 3'</strong>, the game looks up that key and finds:</p><ul><li>Your original 'past-past self' (top row).</li><li>Your 'inverted self' (middle row).</li><li>Your current self (bottom row).</li></ul><p>It then displays all three on-screen, all moving in their respective directions.</p>"
     }
   ]
-
 }
