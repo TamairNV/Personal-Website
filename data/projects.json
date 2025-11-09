@@ -2,7 +2,7 @@
   {
     "id": "Paradox",
     "title": "Paradox Mobile Game",
-    "image": "img/icon.png",
+    "image": "img/Icon.png",
     "github_url": "https://github.com/your-name/my-cool-project",
     "description": "A temporal 2D mobile puzzle game developed in unity.",
     "has_details": true

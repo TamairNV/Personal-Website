@@ -1,6 +1,21 @@
 // Wait for the page to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
 
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    // Add click event listener to the hamburger button
+    if (menuToggle && navLinks) { // Add a safety check
+        menuToggle.addEventListener('click', () => {
+            // Toggle the 'open' class on the nav links container
+            navLinks.classList.toggle('open');
+
+            // Update ARIA attribute for accessibility
+            const isExpanded = navLinks.classList.contains('open');
+            menuToggle.setAttribute('aria-expanded', isExpanded);
+        });
+    }
+
     // Check if we are on the projects page
     if (document.getElementById('project-container')) {
         loadProjects();
@@ -17,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+
 
 // --- Function to load PROJECTS ---
 async function loadProjects() {
@@ -46,6 +63,7 @@ async function loadProjects() {
         <p>${project.description}</p>
         <div>
           <a href="${project.github_url}" target="_blank">GitHub</a>
+          <br>
           ${detailLink}
         </div>
       `;
@@ -131,9 +149,15 @@ async function loadProjectDetails() {
             ? details.gallery.map((item, index) => `
         <div class="gallery-item-alternating">
           <img src="${item.image}" alt="${item.caption}" onerror="this.src='https://placehold.co/600x400/1e1e1e/bb86fc?text=Image+Not+Found';">
+          <br>
           <div class="gallery-item-text">
+          
             <strong>${item.caption}</strong>
-            ${item.description ? `<span class="image-description">${item.description}</span>` : ''}
+            ${item.description ? `<span class="image-description"><br>${item.description}</span>` : ''}
+            <br><br>
+            
+       
+            
           </div>
         </div>
       `).join('')
@@ -145,7 +169,7 @@ async function loadProjectDetails() {
       <img src="${details.main_image}" alt="${details.title} main image" class="project-detail-main-image" onerror="this.src='https.placehold.co/800x400/1e1e1e/bb86fc?text=Main+Image+Not+Found';">
       
       <div class="project-detail-description">
-        <h2>About this Project</h2>
+        <h2>About ${projectId}</h2>
         ${descriptionHtml}
       </div>
       
@@ -155,7 +179,7 @@ async function loadProjectDetails() {
       </aside>
       
       <div class="project-detail-gallery">
-        <h2>Gallery</h2>
+        <h1>Explanation</h1>
         ${galleryHtml}
       </div>
     `;

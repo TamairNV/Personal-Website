@@ -2,9 +2,16 @@
   "title": "Paradox Mobile Game",
   "main_image": "img/paradox1.png",
   "long_description": [
-    "This project involved building a sophisticated interactive data dashboard, designed to visualize complex datasets in an intuitive and user-friendly manner. The primary goal was to provide real-time insights into user engagement and system performance, enabling stakeholders to make data-driven decisions swiftly.",
-    "I focused heavily on optimizing data fetching and rendering performance, utilizing asynchronous JavaScript to handle large volumes of data without compromising the user experience. The challenge was to create a modular architecture that allowed for easy integration of new data sources and visualization components.",
-    "Key features include customizable charts, dynamic filtering capabilities, and a robust backend API integration. I employed a component-based approach, ensuring that each part of the dashboard was reusable and easily maintainable, resulting in a scalable solution for future enhancements."
+    "<p><strong>Paradox</strong> is a 2D temporal puzzle game I developed, inspired by the time-inversion mechanics from the film <em>Tenet</em>.</p>",
+    "<p>The core gameplay loop allows the player to <strong>invert</strong> their personal flow of time. This causes them to move backward through the world, observing their own past actions in reverse. By <strong>re-verting</strong> to forward time, the player creates a new \"self\" on the timeline, allowing them to cooperate with their own past selves to solve complex puzzles.</p>",
+    "<p>The game also features inverted physics objects. For example, an \"inverted bomb\" doesn't explode; it implodes, sucking in energy and freezing its surroundings, as its entropy is reversed relative to the world.</p>",
+    "<h3>Technical Implementation</h3>",
+    "<ul>",
+    "<li><strong>Engine:</strong> Developed in <strong>Unity (C#)</strong>.</li>",
+    "<li><strong>Core Mechanic:</strong> The entire <em>Tenet</em>-style time system is powered by a <strong>complex, custom data structure</strong> I designed from scratch. This structure manages multiple, simultaneous timelines for each \"self\" (past, inverted, and present) and allows for the data to be read both forwards and backwards seamlessly.</li>",
+    "<li><strong>Monetization:</strong> I integrated an <strong>ad mediation platform</strong> to manage and optimize ad revenue by having multiple providers bid for ad spots. I also implemented an <strong>In-App Purchase (IAP)</strong> system for an \"Ad-Free\" option.</li>",
+    "<li><strong>Platform:</strong> Published and available on both the <strong>iOS App Store</strong> and <strong>Google Play Store</strong>.</li>",
+    "</ul>"
   ],
   "technologies": [
     "Unity",
@@ -15,26 +22,23 @@
     "Google Play Console",
     "Apple Store Connect"
   ],
+
   "gallery": [
     {
-      "image": "https://images.unsplash.com/photo-1544400262-b91c0ffb4718?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MTl8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzA4NjQzNjUwfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "caption": "Overview Dashboard Interface",
-      "description": "This image displays the primary dashboard view, showcasing a clean, modern UI with various data widgets. Key performance indicators (KPIs) are prominently featured, offering an at-a-glance summary of critical metrics."
+      "image": "img/Paradox/Slide1Paradox.png",
+      "caption": "Recording Your Time 'Footprint'",
+      "description": "To allow you to invert, the game constantly records 'Moments' of your Position, Direction, and IsMoving status (15 times a second). This data acts like a 'footprint' in time. I smooth this data out so when you watch your past selves, their movement is fluid, not jerky."
     },
     {
-      "image": "https://images.unsplash.com/photo-1558494949-a218acb9ee56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MTl8MHwxfHNlYXJjaHwzfHxkYXRhJTIwYW5hbHlzaXMlMjB0b29sc3xlbnwwfHx8fDE3MDg2NDM2NTF8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "caption": "Detailed Analytics & Filtering",
-      "description": "Here, the user can delve into more granular data with interactive charts and filtering options. The sidebar allows for dynamic selection of date ranges, user segments, and specific metrics to refine the analysis."
+      "image": "img/Paradox/Slide2Paradox.png",
+      "caption": "Visualizing Your Path Through Time",
+      "description": "This shows how you exist on the timeline. Top Row (Green): This is your original path, moving forward in time. Middle Row (Red): You've 'inverted.' You are now moving backward from Moment 4 to Moment 2, watching your original self's actions happen in reverse. Bottom Row (Green): You 're-vert' at Moment 2. You're moving forward again, but now you can co-exist with your other selves."
     },
     {
-      "image": "https://images.unsplash.com/photo-1579547530386-3532f50d996e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MTl8MHwxfHNlYXJjaHw0fHxyZXNwb25zaXZlJTIwd2ViJTIwZGVzaWdufGVufDB8fHx8MTcwODY0MzY1Mnww&ixlib=rb-4.0.3&q=80&w=1080",
-      "caption": "Responsive Mobile Layout",
-      "description": "This screenshot demonstrates the dashboard's fully responsive design, adapting seamlessly to smaller screens. Essential information remains accessible and easy to navigate, ensuring a consistent user experience across devices."
-    },
-    {
-      "image": "https://images.unsplash.com/photo-1510915228389-fe7be6ce2792?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MTl8MHwxfHNlYXJjaHw0fHxwcm9ncmFtbWluZyUyMGNvbnNvbGV8ZW58MHx8fHwxNzA4NjQzNjUzfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "caption": "Behind-the-Scenes Code Snippet",
-      "description": "A glimpse into the underlying code structure, highlighting a snippet of the JavaScript logic responsible for data fetching and state management. This showcases the clean, commented, and modular codebase."
+      "image": "img/Paradox/Slide3Paradox.png",
+      "caption": "How All Your 'Selves' Appear at Once",
+      "description": "This is the magic that lets you see multiple 'yous.' The dictionary groups all your selves by the 'Moment' they are in. For example, at 'Moment 3,' the game looks up that key and finds: Your original 'past-past self' (top row), Your 'inverted self' (middle row), and Your current self (bottom row). It then displays all three on-screen, all moving in their respective directions."
     }
   ]
+
 }
