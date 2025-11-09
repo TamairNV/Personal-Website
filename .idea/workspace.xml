@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6463c74b-33ad-4743-90a4-7a027fc92754" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/details/Paradox.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/details/TorMessenger.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/education.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/projects.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/education.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/A*Icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/MapGif.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/face.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/itch-io.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/linked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/paradox1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/torIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="35D8z1B4unagI4GUTTCKYtyUpom" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "disable.download.node.interpreter.editor.notification": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/tamer/WebstormProjects/Website/img",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/data/details" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6463c74b-33ad-4743-90a4-7a027fc92754" name="Changes" comment="" />
+      <created>1762633541388</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762633541388</updated>
+      <workItem from="1762633542517" duration="19227000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

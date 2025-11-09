@@ -1,18 +1,19 @@
 {
-  "title": "Interactive Data Dashboard",
-  "main_image": "https://images.unsplash.com/photo-1551288259-cd197779de21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MTl8MHwxfHNlYXJjaHw3fHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTcwODY0MzY0OHww&ixlib=rb-4.0.3&q=80&w=1080",
+  "title": "Paradox Mobile Game",
+  "main_image": "img/paradox1.png",
   "long_description": [
     "This project involved building a sophisticated interactive data dashboard, designed to visualize complex datasets in an intuitive and user-friendly manner. The primary goal was to provide real-time insights into user engagement and system performance, enabling stakeholders to make data-driven decisions swiftly.",
     "I focused heavily on optimizing data fetching and rendering performance, utilizing asynchronous JavaScript to handle large volumes of data without compromising the user experience. The challenge was to create a modular architecture that allowed for easy integration of new data sources and visualization components.",
     "Key features include customizable charts, dynamic filtering capabilities, and a robust backend API integration. I employed a component-based approach, ensuring that each part of the dashboard was reusable and easily maintainable, resulting in a scalable solution for future enhancements."
   ],
   "technologies": [
-    "JavaScript (ES6+)",
-    "D3.js (for data visualization)",
-    "React (or Vanilla JS if you prefer)",
-    "HTML5 & CSS3 (Flexbox/Grid)",
-    "Node.js & Express (for backend API simulation)",
-    "RESTful API design"
+    "Unity",
+    "C#",
+    "Ad Mediation",
+    "In App Purchases",
+    "Xcode",
+    "Google Play Console",
+    "Apple Store Connect"
   ],
   "gallery": [
     {

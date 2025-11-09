@@ -1,0 +1,553 @@
+/* --- Global Styles --- */
+:root {
+    --bg-color: #1a202c;
+    --surface-color: #2d3748;
+    --primary-color: #64ffda;
+    --secondary-color: #64ffda; /* Using primary as secondary */
+    --text-color: #e2e8f0;
+    --text-muted: #a0aec0;
+    --border-color: #3e4c62; /* Added a border */
+}
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1{
+    color: var(--primary-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+
+
+}
+h2, h3, h4 {
+    color: var(--primary-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 2em 0;
+}
+
+.error-message {
+    color: #ff6b6b;
+    background-color: var(--surface-color);
+    border: 1px solid #ff6b6b;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* --- Navigation --- */
+nav {
+    background-color: var(--surface-color);
+    padding: 1.2em 0;
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+nav a {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active { /* You can add 'active' class with JS if you want */
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+/* --- Index Page: Hero Section --- */
+.hero-section {
+    display: flex;
+    flex-direction: column-reverse; /* Stack pic on top on mobile */
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    margin: 3em 0;
+}
+
+.hero-text {
+    flex-basis: 60%;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.hero-text .subtitle {
+    font-size: 1.3em;
+    color: var(--text-muted);
+    margin-top: 0.5em;
+}
+
+.profile-pic-wrapper {
+    flex-basis: 40%;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular picture */
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 5px 20px rgba(100, 255, 218, 0.15);
+}
+
+/* --- Index Page: Contact Links --- */
+#contact h2 {
+    text-align: center;
+}
+#contact p {
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.contact-links-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.contact-link img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px; /* Slightly rounded icon */
+    margin-bottom: 0.5em;
+    background-color: var(--surface-color);
+}
+
+.contact-link span {
+    font-weight: 500;
+}
+
+
+/* --- Project Cards Grid --- */
+#project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 1.5em;
+    text-align: center;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(100, 255, 218, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 1.2/1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    background-color: var(--bg-color);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.project-card p {
+    font-size: 0.95em;
+    color: var(--text-muted);
+    flex-grow: 1; /* Pushes links to the bottom */
+}
+
+.project-card .card-links {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* In case links are too long */
+    gap: 1em;
+}
+
+.project-card .card-links a {
+    display: inline-block;
+    padding: 0.6em 1em;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    flex-grow: 1; /* Make buttons share space */
+    flex-basis: 100px; /* Minimum width */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .card-links a.github-link {
+    background-color: #333;
+    color: #fff;
+}
+.project-card .card-links a.github-link:hover {
+    background-color: #444;
+    text-decoration: none;
+}
+
+.project-card .card-links a.details-link {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+.project-card .card-links a.details-link:hover {
+    background-color: #92ffde;
+    text-decoration: none;
+}
+
+
+/* --- Education Timeline (ALTERNATING LAYOUT) --- */
+#timeline-container {
+    position: relative;
+    padding: 2em 0;
+    /* Ensure it doesn't overflow horizontally */
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+/* The vertical line (LEFT-ALIGNED ON MOBILE) */
+#timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px; /* <-- MODIFIED */
+    transform: translateX(-50%); /* <-- MODIFIED */
+    height: 100%;
+    width: 4px;
+    background-color: var(--surface-color);
+    border-radius: 2px;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 2em;
+    /* Mobile: All entries on the right of the line */
+    width: 100%;
+    padding-left: 50px; /* <-- MODIFIED (20px line + 30px gap) */
+    box-sizing: border-box; /* Important for padding+width */
+    text-align: left; /* Default text alignment */
+
+    /* --- NEW FLEXBOX STYLES --- */
+    display: flex;
+    flex-direction: column;
+    /* On mobile, align items to the left */
+    align-items: flex-start;
+}
+
+/* The dot on the line (LEFT-ALIGNED ON MOBILE) */
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* <-- MODIFIED */
+    transform: translateX(-50%); /* <-- MODIFIED */
+    top: 8px;
+    height: 16px;
+    width: 16px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--bg-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-entry h2 { /* Year */
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+}
+
+.timeline-entry h3 { /* School */
+    margin: 0 0 0.5em 0;
+    font-size: 1.5em;
+    padding-top: 4px;
+}
+
+.timeline-entry ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    display: inline-block; /* <-- This makes it shrink to fit content */
+    min-width: 300px; /* Ensures it's not too narrow */
+    text-align: left; /* Text inside box is left-aligned */
+
+    /* Handle long lists (like 10 GCSEs) */
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.timeline-entry li {
+    padding: 0.8em 1.5em;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-entry li:last-child {
+    border-bottom: none;
+}
+
+.timeline-entry li .grade {
+    font-weight: 600;
+    color: var(--secondary-color);
+    padding-left: 1em;
+}
+
+/* --- Project Detail Page --- */
+#project-detail-container {
+    padding-bottom: 2em; /* Add space at the bottom */
+}
+
+.project-detail-header img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    margin-bottom: 1em;
+    border: 1px solid var(--border-color);
+}
+
+.project-detail-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* --- Tech Table (NEW) --- */
+.tech-table {
+    width: 100%;
+    margin: 2em 0;
+    border-collapse: collapse;
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.tech-table th,
+.tech-table td {
+    padding: 1em 1.5em;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tech-table th {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.tech-table tr:last-child th,
+.tech-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* --- Alternating Gallery (NEW) --- */
+.project-gallery {
+    margin-top: 3em;
+}
+
+.gallery-row {
+    display: flex;
+    flex-direction: column; /* Default for mobile */
+    gap: 1.5em;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    overflow: hidden; /* Fixes any layout bleeds */
+}
+
+.gallery-row .gallery-image,
+.gallery-row .gallery-text {
+    flex-basis: 50%;
+}
+
+.gallery-row .gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-row .gallery-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery-row .gallery-text .caption {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5em;
+}
+
+.gallery-row .gallery-text .description {
+    font-size: 1em;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+
+/* --- Responsive Media Queries --- */
+
+@media (min-width: 600px) {
+    /* Make hero section side-by-side on larger screens */
+    .hero-section {
+        flex-direction: row; /* Side-by-side */
+        text-align: left;
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5em;
+    }
+}
+
+
+/* For tablets and small desktops */
+@media (min-width: 768px) {
+
+    /* --- ADDED: Move line back to center on desktop --- */
+    #timeline-container::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* --- ALTERNATING TIMELINE (DESKTOP) --- */
+    .timeline-entry {
+        /* Each entry is 50% wide */
+        width: 50%;
+        /* Reset mobile padding */
+        padding-left: 30px;
+    }
+
+    /* Odd entries (1, 3, 5...) on the LEFT */
+    .timeline-entry:nth-child(odd) {
+        left: 0;
+        padding-left: 0;
+        padding-right: 30px; /* Space from line */
+        /* text-align: right; */ /* <-- REMOVED this */
+        align-items: flex-end; /* <-- ADDED: This pushes h2, h3, and ul to the right */
+    }
+
+    /* Even entries (2, 4, 6...) on the RIGHT */
+    .timeline-entry:nth-child(even) {
+        left: 50%; /* Start at the 50% mark */
+        padding-left: 30px; /* Space from line */
+        /* text-align: left; */ /* <-- REMOVED this */
+        align-items: flex-start; /* <-- ADDED: This keeps h2, h3, and ul to the left */
+    }
+
+    /* Odd entries: move dot to the RIGHT edge */
+    .timeline-entry:nth-child(odd)::before {
+        left: 100%; /* 100% of the 50% width box */
+        transform: translateX(-50%);
+    }
+
+    /* Even entries: move dot to the LEFT edge */
+    .timeline-entry:nth-child(even)::before {
+        left: 0; /* 0% of the 50% width box */
+        transform: translateX(-50%);
+    }
+
+    /* Odd entries: align the inline-block box to the right */
+    .timeline-entry:nth-child(odd) ul {
+        /* float: right; */ /* <-- REMOVED: No longer needed */
+    }
+
+    .timeline-entry:nth-child(even) ul {
+        /* float: left; */ /* <-- REMOVED: No longer needed */
+    }
+
+
+    /* --- Alternating Gallery on Desktop (NEW) --- */
+    .gallery-row {
+        flex-direction: row; /* Side-by-side on desktop */
+    }
+
+    /* This row reverses the order */
+    .gallery-row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Paradox",
+    "title": "Paradox Mobile Game",
+    "image": "img/icon.png",
+    "github_url": "https://github.com/your-name/my-cool-project",
+    "description": "A temporal 2D mobile puzzle game developed in unity.",
+    "has_details": true
+  },
+  {
+    "id": "TorMessenger",
+    "title": "Tor Messenger",
+    "image": "img/torIcon.png",
+    "github_url": "https://github.com/your-name/another-project",
+    "description": "A high-security, self-hosted chat app that routes all communication over the Tor network.",
+    "has_details": true
+  },
+  {
+    "id": "NEA",
+    "title": "A-Level NEA project - Surviving Earth",
+    "image": "img/SurvivingEarth.png",
+    "github_url": "https://github.com/your-name/another-project",
+    "description": "A-Level Computer Science project (NEA), which scored 71/75.",
+    "has_details": true
+  },
+  {
+    "id": "A*",
+    "title": "High Efficiency A* Pathfinding",
+    "image": "img/A*Icon.gif",
+    "github_url": "https://github.com/your-name/another-project",
+    "description": "A multithreaded A* pathfinding algorithm in C#, optimized to handle thousands of paths per second.",
+    "has_details": false
+  },
+  {
+    "id": "MapCreation",
+    "title": "Random Room Creation",
+    "image": "img/MapGif.gif",
+    "github_url": "https://github.com/your-name/another-project",
+    "description": "A tool that builds a map by randomly connecting pre-made rooms at their doors, using collision detection to prevent overlaps.",
+    "has_details": false
+  },
+  {
+    "id": "Wordle",
+    "title": "Wordle Solver with a Pre-computed Positional Index",
+    "image": "img/worldIcon.png",
+    "github_url": "https://github.com/your-name/another-project",
+    "description": "A python script that solves Wordle by pre-processing the entire word list into a fast lookup structure to efficiently filter candidates after each guess.",
+    "has_details": true
+  }
+]

@@ -1,6 +1,6 @@
 {
   "title": "Tor Messenger",
-  "main_image": "img/paradox1.png",
+  "main_image": "img/tor.png",
   "long_description": [
     "A high-security, self-hosted chat app that routes all communication over the Tor network. It uses GPG to ensure only you and your friends can read messages, which are deleted from the server after being read. It's built for extreme privacy, giving users total control over their data, but requires technical skill to set up."
   ],

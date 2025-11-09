@@ -1,0 +1,36 @@
+[
+  {
+    "year": "2024",
+    "school": "Newcastle University",
+    "items": [
+      { "subject": "Computer Science", "grade": "Expected: 1st" }
+    ]
+  },
+  {
+    "year": "2022-2024",
+    "school": "Aylesbury Grammar A-Levels",
+    "items": [
+      { "subject": "Computer Science", "grade": "A" },
+      { "subject": "Chemistry", "grade": "A" },
+      { "subject": "Biology", "grade": "A" },
+      { "subject": "Maths AS", "grade": "B" }
+    ]
+  },
+  {
+    "year": "2019-2022",
+    "school": "John Colet School - GCSE",
+    "items": [
+      { "subject": "Physics", "grade": "9" },
+      { "subject": "Chemistry", "grade": "8" },
+      { "subject": "Biology", "grade": "8" },
+      { "subject": "Maths", "grade": "8" },
+      { "subject": "Computer Science", "grade": "8" },
+      { "subject": "IT", "grade": "8" },
+      { "subject": "English Lit", "grade": "6" },
+      { "subject": "English Language", "grade": "6" },
+      { "subject": "Geography", "grade": "5" },
+      { "subject": "Business", "grade": "5" }
+
+    ]
+  }
+]

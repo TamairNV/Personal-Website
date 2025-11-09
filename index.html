@@ -1,1 +1,105 @@
-console.log('Happy developing ✨')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer Vassib - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-index"> <!-- Added id for JS logic -->
+
+<!-- Navigation Bar (same on all pages) -->
+<nav>
+    <a href="index.html" class="active">About</a> <!-- 'active' class to show current page -->
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+
+    <!-- New Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Tamer Vassib</h1>
+            <p class="subtitle">
+                Passionate Web Developer & Designer specializing in [Your Specialty]
+            </p>
+        </div>
+        <div class="profile-pic-wrapper">
+            <!--
+              Add your face picture here.
+              A simple square photo is perfect.
+            -->
+            <img
+                    src="img/face.JPG"
+                    alt="A professional headshot of [Your Name]"
+                    class="profile-pic"
+            >
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm [Your Name]. Welcome to my personal site.
+            I am a passionate [Your Role] based in [Your Location].
+        </p>
+        <p>
+            You can write a few paragraphs here about your interests,
+            your skills (like React, JavaScript, HTML, CSS), and
+            what you are looking for.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Updated Links/Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>You can find me on the following platforms:</p>
+
+        <div class="contact-links-container">
+            <!--
+              Place your icons in an 'images' folder.
+              e.g., 'images/github-icon.png'
+              Using placeholders for now.
+            -->
+            <a href="https://github.com/tamairNV" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <img src="img/github.png" alt="GitHub icon">
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/tamer-vassib-552220279/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <img src="img/linked.png" alt="LinkedIn icon">
+
+            </a>
+
+            <a href="mailto:tamairapps@IsotopicStudios.co.uk" class="contact-link">
+                <img src="img/email.png" alt="Email icon">
+
+            </a>
+            <a href="https://radioactiveant7.itch.io/" class="contact-link">
+                <img src="img/itch-io.png" alt="Email icon">
+
+            </a>
+
+            <a href="https://www.paradoxgame.co.uk" class="contact-link">
+                <img src="img/Icon.png" alt="Email icon">
+
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<!--
+  You don't need app.js on this page
+  since it's all static content.
+-->
+
+</body>
+</html>
