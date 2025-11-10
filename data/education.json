@@ -1,5 +1,6 @@
 [
   {
+    "image" : "img/school/uni.png",
     "year": "2024",
     "school": "Newcastle University",
     "items": [
@@ -7,6 +8,7 @@
     ]
   },
   {
+    "image" : "img/school/AGS.png",
     "year": "2022-2024",
     "school": "Aylesbury Grammar A-Levels",
     "items": [
@@ -17,6 +19,7 @@
     ]
   },
   {
+    "image" : "img/school/johncolet.png",
     "year": "2019-2022",
     "school": "John Colet School - GCSE",
     "items": [

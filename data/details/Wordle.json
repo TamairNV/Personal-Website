@@ -1,0 +1,34 @@
+{
+  "title": "Tor Messenger",
+  "main_image": "img/WordleMain.png",
+  "long_description": [
+    "A high-security, self-hosted chat system architected for extreme anonymity. The system operates on a 'trustless' federated model: each user runs their own <strong>local Flask server</strong>, which routes all communication over the <strong>Tor network</strong>. This local server is responsible for all <strong>GPG encryption and decryption</strong>, ensuring that unencrypted messages never leave the user's machine.",
+    "A central <strong>mariaDB server</strong> (which anyone can host) manages account registration and friend connections, but it only ever handles encrypted data. It has zero access to message content or user IP addresses. Once a message is delivered and read, it is <strong>deleted from the server</strong> and stored only on the users' local machines.",
+    "This architecture is ideal for <strong>activists, journalists, or privacy-critical groups</strong> who need to manage their own infrastructure. The main <strong>limitation</strong> is usability, as it requires users to run their own server. A key technical challenge was building a <strong>zero-JavaScript</strong> front-end to comply with the Tor Browser's most secure settings."
+  ],
+  "technologies": [
+    "Tor",
+    "Python",
+    "Flask",
+    "GPG Encryption",
+    "SQL",
+    "mariaDB"
+  ],
+  "gallery": [
+    {
+      "image": "img/WordleGraph.png",
+      "caption": "Dashboard with friend requests and quick actions.",
+      "description": "The entire app is built with <strong>zero JavaScript</strong> to ensure maximum security within the Tor Browser (which blocks scripts by default). This presented a unique design challenge, requiring all interactions to be handled purely on the backend."
+    },
+    {
+      "image": "img/tor/2.png",
+      "caption": "A secure, end-to-end encrypted chat.",
+      "description": "Messages are <strong>encrypted locally</strong> before being sent, so the central server never sees plain text. For group chats, each message is individually encrypted for every member, maintaining the <strong>'trustless' model</strong>."
+    },
+    {
+      "image": "img/tor/3.png",
+      "caption": "Local, encrypted message storage.",
+      "description": "This shows the local chat log. Once a message is read, it's <strong>deleted from the server</strong> and saved locally. Messages you send are stored symmetrically, while others remain asymmetrically encrypted until your private key decrypts them."
+    }
+  ]
+}

@@ -438,6 +438,29 @@ nav a.active {
     color: var(--secondary-color);
     padding-left: 1em;
 }
+.timeline-entry img {
+    width: 75px;
+    height: 75px;
+
+    /* Change 'cover' to 'contain' */
+    object-fit: contain; /* This fits the whole image inside */
+
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+    vertical-align: middle;
+    margin-left: 8px;
+
+    /* This background color will now show in the "buffer zone" */
+    background-color: var(--surface-color);
+
+    /* Add your border */
+    border: 2px solid var(--border-color);
+
+
+    padding: 5px;
+    box-sizing: border-box; 
+    
+}
 
 /* --- Project Detail Page --- */
 #project-detail-container {
