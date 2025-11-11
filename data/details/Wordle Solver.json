@@ -1,0 +1,24 @@
+{
+  "title": "High-Performance Wordle Solver",
+  "main_image": "img/WordleMain.png",
+  "long_description": [
+    "A high-performance Wordle <strong>solving engine</strong> written in Python. It uses a clever data structure to find the best possible guess incredibly fast, achieving an average of <strong>3.737 guesses</strong> when simulated 1,000 times starting with the word <strong>'slate'</strong>.",
+    "The key to its speed is <strong>pre-indexing</strong>. Before any games are run, the entire word list is organized into a structure that works like a series of <strong>hash maps</strong>. There is one main map for each of the <strong>5 letter positions</strong>.",
+    "When the <strong>solver</strong> gets a 'green' clue (right letter, right spot), it can instantly grab the exact list of all words that have that letter in that position. For example, it can find 'all words with S in position 0' in a single step. This <strong>positional indexing</strong> is what makes the filtering process almost instantaneous."
+  ],
+  "technologies": [
+    "Python",
+    "NumPy",
+    "JSON",
+    "Data Structures",
+    "Hash Maps",
+    "Algorithms"
+  ],
+  "gallery": [
+    {
+      "image": "img/WordleGraph.png",
+      "caption": "The pre-computed data structure for instant filtering.",
+      "description": "This diagram shows the core logic. The <strong>'Position Map'</strong> (boxes 0-4) represents the five letter slots in a guess. Each position map points to a <strong>'Letter Map'</strong> (A-F, etc.), which acts like a <strong>hash map</strong>. This structure lets the <strong>solver</strong> instantly find words based on clues. A 'green' clue like 'A in position 0' is a direct lookup. This <strong>pre-built index</strong> is the secret to its high-speed performance."
+    }
+  ]
+}

@@ -20,10 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('project-container')) {
         loadProjects();
     }
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
 
     // Check if we are on the education page
-    if (document.getElementById('timeline-container')) {
+    if (document.getElementById('timeline-container') && page === "education.html") {
         loadEducation();
+    }else if(document.getElementById('timeline-container')){
+        loadExperience();
     }
 
     // Check if we are on the project detail page
@@ -191,5 +195,48 @@ async function loadProjectDetails() {
     } catch (error) {
         container.innerHTML = `<p style="color: #ff8a80;">Error loading project details: ${error.message}</p>`;
         console.error('Failed to load project details:', error);
+    }
+}
+
+
+
+async function loadExperience() {
+    const container = document.getElementById('timeline-container');
+    if (!container) return; // Safety check
+
+    try {
+        const response = await fetch('./data/experience.json');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const timelineData = await response.json();
+
+        container.innerHTML = ''; // Clear loading message
+        timelineData.forEach(entry => {
+            // Loop over subjects to create a list
+            let subjectList = '<ul>';
+            
+            subjectList += '</ul>';
+
+            // Create the HTML for the timeline entry
+            const timelineEntry = document.createElement('div');
+            timelineEntry.className = 'timeline-entry';
+            timelineEntry.innerHTML = `
+        <h2>${entry.year}
+            <a href="${entry.link}"target="_blank">
+        <img src="${entry.image}" onerror="this.src='https://placehold.co/600x400/1e1e1e/bb86fc?text=Image+Not+Found';">
+        </a>
+
+        
+        <h3>${entry.place}</h3>
+        <div class = "job-box" >
+        ${entry.description}
+        </div>
+     
+        ${subjectList}
+      `;
+            container.appendChild(timelineEntry);
+        });
+    } catch (error) {
+        container.innerHTML = '<p>Error loading education history. Please try again later.</p>';
+        console.error('Failed to load experience:', error);
     }
 }

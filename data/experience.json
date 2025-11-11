@@ -1,0 +1,23 @@
+[
+  {
+    "image": "img/Work/codeNinjas.png",
+    "link" : "https://www.codeninjas.co.uk/aylesbury-bkm-uk",
+    "year": "2022-2025",
+    "place": "Code Ninjas",
+    "description": "<ul> <li> Instructed and mentored groups of up to 20 students (aged 7-14) in core coding fundamentals (Python, C#, JavaScript) and logical problem-solving. </li> <li> Served as the primary trainer for new instructors, mentoring 15+ team members on curriculum delivery, software, and professional parent communication. </li> <li> Acted as a senior resource for peers, providing guidance on advanced student challenges and effectively managing more complex assignments. </li> <li> Played a key role in the center's adoption of Unity, applying personal expertise to help leadership successfully implement the new curriculum. </li> <li> Managed parent communications and progress updates, ensuring families were confident in both their child's learning outcomes and engagement. </li> <li> Recognized as 'Employee of the Month' within four months for high performance and dedication to enhancing the student learning experience. </li> </ul>"
+  },
+  {
+    "image" : "img/Work/Avondale.jpeg",
+    "link" : "",
+    "year": "2023",
+    "place": "Care Home Volunteer",
+    "description": "A long description"
+  },
+  {
+    "image" : "img/Work/primaryIcon.png",
+    "link" : "",
+    "year": "2023",
+    "place": "Primary School Volunteer",
+    "description": "A long description"
+  }
+]

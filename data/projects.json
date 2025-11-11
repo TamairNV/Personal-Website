@@ -40,7 +40,7 @@
     "has_details": false
   },
   {
-    "id": "Wordle",
+    "id": "Wordle Solver",
     "title": "Wordle Solver with a Pre-computed Positional Index",
     "image": "img/worldIcon.png",
     "github_url": "https://github.com/your-name/another-project",
