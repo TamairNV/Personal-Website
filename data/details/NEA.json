@@ -1,34 +1,34 @@
 {
-  "title": "Tor Messenger",
-  "main_image": "img/tor.png",
+  "title": "3D City-Building Simulation",
+  "main_image": "img/Earth/main.png",
   "long_description": [
-    "A high-security, self-hosted chat system architected for extreme anonymity. The system operates on a 'trustless' federated model: each user runs their own <strong>local Flask server</strong>, which routes all communication over the <strong>Tor network</strong>. This local server is responsible for all <strong>GPG encryption and decryption</strong>, ensuring that unencrypted messages never leave the user's machine.",
-    "A central <strong>mariaDB server</strong> (which anyone can host) manages account registration and friend connections, but it only ever handles encrypted data. It has zero access to message content or user IP addresses. Once a message is delivered and read, it is <strong>deleted from the server</strong> and stored only on the users' local machines.",
-    "This architecture is ideal for <strong>activists, journalists, or privacy-critical groups</strong> who need to manage their own infrastructure. The main <strong>limitation</strong> is usability, as it requires users to run their own server. A key technical challenge was building a <strong>zero-JavaScript</strong> front-end to comply with the Tor Browser's most secure settings."
+    "This project involved the complete design and development of 'Society's Edge,' a 3D city-building and resource management game. Built in <strong>C# using the Unity 3D engine</strong>, the primary objective was to engineer a feature-rich simulation that blends the complex logistical management of factory-builders with the dynamic NPC simulation and survival aspects of city-builders.",
+    "The core gameplay loop centers on strategic expansion and management. Players develop a city on a procedurally generated 64x64 grid, contending with three distinct biomes (Fire, Wind, Earth) that provide buffs or debuffs to buildings. They must manage a 12-item resource economy, advance through a 3-tier research tree to unlock new technology, and support a population of autonomous NPCs who dynamically seek out homes and jobs.",
+    "The game is supported by a robust, custom-built backend using a <strong>MySQL</strong> database hosted on <strong>Amazon Web Services (AWS)</strong>. This scalable infrastructure handles secure user authentication, persistent cloud saving, and all player data. The project was a successful integration of complex frontend gameplay logic with a secure, high-performance backend, demonstrating advanced problem-solving in areas of AI, database architecture, and performance optimization."
   ],
   "technologies": [
-    "Tor",
-    "Python",
-    "Flask",
-    "GPG Encryption",
-    "SQL",
-    "mariaDB"
+    "C#",
+    "Unity 3D",
+    "MySQL",
+    "AWS",
+    "OOP",
+    "JSON"
   ],
   "gallery": [
     {
-      "image": "img/tor/1.png",
-      "caption": "Dashboard with friend requests and quick actions.",
-      "description": "The entire app is built with <strong>zero JavaScript</strong> to ensure maximum security within the Tor Browser (which blocks scripts by default). This presented a unique design challenge, requiring all interactions to be handled purely on the backend."
+      "image": "img/Earth/Game.png",
+      "caption": "Strategic, Grid-Based City Building.",
+      "description": "The game's front-end is built around a complex grid-based building and resource system. A core mechanic is the procedural world generation, which creates maps with strategic biomes that directly impact building efficiency, forcing the player to make tactical placement decisions. The economy is driven by 12 distinct resources, which are either gathered by basic buildings or crafted by advanced 'Producer' buildings. Player progression is managed via a 3-tier research tree, and a comprehensive UI system—including a top-level info bar and a detailed 'City Overview' menu—was built to give the player full managerial control over their expanding city."
     },
     {
-      "image": "img/tor/2.png",
-      "caption": "A secure, end-to-end encrypted chat.",
-      "description": "Messages are <strong>encrypted locally</strong> before being sent, so the central server never sees plain text. For group chats, each message is individually encrypted for every member, maintaining the <strong>'trustless' model</strong>."
+      "image": "img/Earth/AStar.png",
+      "caption": "Optimized A* Pathfinding & AI Simulation.",
+      "description": "A primary technical challenge was engineering the autonomous NPC simulation. The <strong>A*</strong> pathfinding algorithm was implemented from scratch to manage all NPC movement, using a custom-built <strong>PriorityQueue</strong> data structure to efficiently sort nodes. To handle the computational load of many NPCs, a <strong>path caching system</strong> was designed using a hash map (`LinkedList<PathData>[]`). This system stores and retrieves previously calculated paths, skipping the A* calculation entirely. This, combined with a <strong>'soft reset'</strong> function that eliminated massive garbage collection spikes, resulted in a high-performance simulation capable of scaling as the city grows."
     },
     {
-      "image": "img/tor/3.png",
-      "caption": "Local, encrypted message storage.",
-      "description": "This shows the local chat log. Once a message is read, it's <strong>deleted from the server</strong> and saved locally. Messages you send are stored symmetrically, while others remain asymmetrically encrypted until your private key decrypts them."
+      "image": "img/Earth/Database.png",
+      "caption": "Secure Backend & Database Architecture.",
+      "description": "To support cloud saving and user accounts, a secure backend was custom-built using a MySQL database on AWS. A normalized, relational schema was designed to store all game data, serializing the complete game state into <strong>BLOBs</strong> within a `Files` table linked to each user's save. Security was paramount: a unique, <strong>multi-stage hashing algorithm</strong> was developed that hashes a user's password and then hashes that result again <strong>against</strong> a random, per-user <strong>salt</strong>. This method, combined with brute-force lockouts and strict password validation, ensures robust protection for user credentials."
     }
   ]
 }
