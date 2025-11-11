@@ -16,17 +16,17 @@
   ],
   "gallery": [
     {
-      "image": "img/tor/Tor1.png",
+      "image": "img/Tor/Tor1.png",
       "caption": "Dashboard with friend requests and quick actions.",
       "description": "The entire app is built with <strong>zero JavaScript</strong> to ensure maximum security within the Tor Browser (which blocks scripts by default). This presented a unique design challenge, requiring all interactions to be handled purely on the backend."
     },
     {
-      "image": "img/tor/Tor2.png",
+      "image": "img/Tor/Tor2.png",
       "caption": "A secure, end-to-end encrypted chat.",
       "description": "Messages are <strong>encrypted locally</strong> before being sent, so the central server never sees plain text. For group chats, each message is individually encrypted for every member, maintaining the <strong>'trustless' model</strong>."
     },
     {
-      "image": "img/tor/Tor3.png",
+      "image": "img/Tor/Tor3.png",
       "caption": "Local, encrypted message storage.",
       "description": "This shows the local chat log. Once a message is read, it's <strong>deleted from the server</strong> and saved locally. Messages you send are stored symmetrically, while others remain asymmetrically encrypted until your private key decrypts them."
     }

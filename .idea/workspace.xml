@@ -6,15 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6463c74b-33ad-4743-90a4-7a027fc92754" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/details/NEA.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/details/NEA.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/details/TorMessenger.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/details/TorMessenger.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/education.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/education.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/experience.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/experience.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Screenshot 2025-11-10 at 18.21.58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/SurvivingEarth1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Tor/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Tor/Tor1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Tor/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Tor/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +113,7 @@
       <workItem from="1762726615245" duration="17844000" />
       <workItem from="1762871901869" duration="817000" />
       <workItem from="1762878791045" duration="282000" />
-      <workItem from="1762879421834" duration="3008000" />
+      <workItem from="1762879421834" duration="4276000" />
     </task>
     <servers />
   </component>

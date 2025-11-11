@@ -1,6 +1,6 @@
 [
   {
-    "image": "img/Work/codeNinjas.png",
+    "image": "img/Work/codeNInjas.png",
     "link" : "https://www.codeninjas.co.uk/aylesbury-bkm-uk",
     "year": "2023-2025",
     "place": "Code Ninjas",
@@ -8,14 +8,14 @@
   },
   {
     "image" : "img/Work/Avondale.jpeg",
-    "link" : "",
+    "link" : "https://www.porthaven.co.uk/avondale-aylesbury/",
     "year": "2023",
     "place": "Care Home Volunteer",
     "description": "<ul><li>Engaged in meaningful conversations with residents, primarily those with dementia. Demonstrated patience and empathy to navigate repetitive discussions, focusing on creating positive moments and building rewarding connections.</li></ul>"
   },
   {
     "image" : "img/Work/primaryIcon.png",
-    "link" : "",
+    "link" : "https://www.tjs.org.uk",
     "year": "2023",
     "place": "Primary School Volunteer",
     "description": "<ul><li>Volunteered at a primary school, providing key support to teachers with various tasks. Actively guided children through their work and developed strategies to keep them engaged and focused on learning.</li></ul>"

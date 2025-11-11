@@ -102,8 +102,10 @@ async function loadEducation() {
             const timelineEntry = document.createElement('div');
             timelineEntry.className = 'timeline-entry';
             timelineEntry.innerHTML = `
-        <h2>${entry.year}<img src="${entry.image}" onerror="this.src='https://placehold.co/600x400/1e1e1e/bb86fc?text=Image+Not+Found';"></h2> 
-        
+        <h2>${entry.year}
+                    <a href="${entry.link}"target="_blank">
+        <img src="${entry.image}" onerror="this.src='https://placehold.co/600x400/1e1e1e/bb86fc?text=Image+Not+Found';">
+        </a>
         <h3>${entry.school}</h3>
         ${subjectList}
       `;
