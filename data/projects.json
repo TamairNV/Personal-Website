@@ -24,6 +24,14 @@
     "has_details": true
   },
   {
+    "id": "Clash Tracker",
+    "title": "Clash of Clans Clan Tracker",
+    "image": "img/COC.png",
+    "github_url": "https://github.com/TamairNV/ClashOfClansWarTracker",
+    "description": "A Flask app optimizing Clash of Clans war strategy through algorithmic player ranking and live API target assignment.",
+    "has_details": false
+  },
+  {
     "id": "A*",
     "title": "High Efficiency A* Pathfinding",
     "image": "img/A*Icon.gif",
