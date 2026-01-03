@@ -28,7 +28,7 @@
     "title": "Clash of Clans Clan Tracker",
     "image": "img/COC.png",
     "github_url": "https://github.com/TamairNV/ClashOfClansWarTracker",
-    "description": "A Flask app optimizing Clash of Clans war strategy through algorithmic player ranking and live API target assignment; live at wizardlywinds.cc.",
+    "description": "A Flask app optimizing Clash of Clans war strategy through algorithmic player ranking and live API target assignment; live at https://wizardlyminds.cc",
     "has_details": false
   },
   {
