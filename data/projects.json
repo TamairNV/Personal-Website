@@ -3,7 +3,7 @@
     "id": "Paradox",
     "title": "Paradox Mobile Game",
     "image": "img/Icon.png",
-    "github_url": "https://github.com/your-name/my-cool-project",
+    "github_url": "https://github.com/TamairNV/Tenet-Data-Structure",
     "description": "A temporal 2D mobile puzzle game developed in unity.",
     "has_details": true
   },
@@ -11,7 +11,7 @@
     "id": "TorMessenger",
     "title": "Tor Messenger",
     "image": "img/torIcon.png",
-    "github_url": "https://github.com/your-name/another-project",
+    "github_url": "https://github.com/TamairNV/Secure-Tor-Communications",
     "description": "A high-security, self-hosted chat app that routes all communication over the Tor network.",
     "has_details": true
   },
@@ -19,7 +19,6 @@
     "id": "NEA",
     "title": "A-Level NEA project - Surviving Earth",
     "image": "img/SurvivingEarth.png",
-    "github_url": "https://github.com/your-name/another-project",
     "description": "A-Level Computer Science project (NEA), which scored 71/75.",
     "has_details": true
   },
