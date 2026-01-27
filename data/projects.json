@@ -34,7 +34,7 @@
     "id": "A*",
     "title": "High Efficiency A* Pathfinding",
     "image": "img/A*Icon.gif",
-    "github_url": "https://github.com/your-name/another-project",
+    "github_url": "https://github.com/TamairNV/a-star-algorithm-visualization-tool",
     "description": "A multithreaded A* pathfinding algorithm in C#, optimized to handle thousands of paths per second.",
     "has_details": false
   },
@@ -42,7 +42,7 @@
     "id": "MapCreation",
     "title": "Random Room Creation",
     "image": "img/MapGif.gif",
-    "github_url": "https://github.com/your-name/another-project",
+    "github_url": "https://github.com/TamairNV/MapCreationUsingSeed",
     "description": "A tool that builds a map by randomly connecting pre-made rooms at their doors, using collision detection to prevent overlaps.",
     "has_details": false
   },
@@ -50,7 +50,7 @@
     "id": "Wordle Solver",
     "title": "Wordle Solver with a Pre-computed Positional Index",
     "image": "img/worldIcon.png",
-    "github_url": "https://github.com/your-name/another-project",
+    "github_url": "https://github.com/TamairNV/WordleSolver",
     "description": "A python script that solves Wordle by pre-processing the entire word list into a fast lookup structure to efficiently filter candidates after each guess.",
     "has_details": true
   }
