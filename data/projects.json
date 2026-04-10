@@ -7,14 +7,15 @@
     "description": "A temporal 2D mobile puzzle game developed in unity.",
     "has_details": true
   },
-  {
-    "id": "TorMessenger",
-    "title": "Tor Messenger",
-    "image": "img/torIcon.png",
-    "github_url": "https://github.com/TamairNV/Secure-Tor-Communications",
-    "description": "A high-security, self-hosted chat app that routes all communication over the Tor network.",
+    {
+    "id": "DNA",
+    "title": "DNA Sequence Alignment Tool",
+    "image": "img/DNA/Icon.png",
+    "github_url": "https://github.com/TamairNV/DNA-Sequence-Alignment-Tool",
+    "description": "A DNA Sequence Alignment Tool written in Rust that can compare two full genomes.",
     "has_details": true
   },
+
   {
     "id": "NEA",
     "title": "A-Level NEA project - Surviving Earth",
@@ -52,6 +53,14 @@
     "image": "img/worldIcon.png",
     "github_url": "https://github.com/TamairNV/WordleSolver",
     "description": "A python script that solves Wordle by pre-processing the entire word list into a fast lookup structure to efficiently filter candidates after each guess.",
+    "has_details": true
+  },
+    {
+    "id": "TorMessenger",
+    "title": "Tor Messenger",
+    "image": "img/torIcon.png",
+    "github_url": "https://github.com/TamairNV/Secure-Tor-Communications",
+    "description": "A high-security, self-hosted chat app that routes all communication over the Tor network.",
     "has_details": true
   }
 ]

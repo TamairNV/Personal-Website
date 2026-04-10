@@ -1,0 +1,43 @@
+{
+  "title": "High-Performance DNA Sequence Aligner",
+  "main_image": "img/DNA/Thaliana-Lyrata.png",
+  "long_description": [
+    "<p><strong>Genomic Aligner</strong> is a high-performance bio-engine I developed from scratch in Rust to compare massive sequences of DNA (up to 800 million base pairs) and visualize millions of years of evolutionary history.</p>",
+    "<p>The core computational challenge in bioinformatics is the Cartesian explosion: comparing two gigabase-scale genomes base-by-base would take years. This engine solves that by combining state-of-the-art heuristic search algorithms with aggressive hardware-level memory optimizations to process the data in minutes.</p>",
+    "<p>By outputting 2D dot plots, the engine visually reveals structural variants like <strong>chromosome fusions</strong>, massive inversions, and ancient <strong>whole-genome triplication</strong> events, stripping away the evolutionary \"junk DNA\" to show only the highly conserved core genes.</p>",
+    "<h3>Technical Implementation</h3>",
+    "<ul>",
+    "<li><strong>Engine:</strong> Written entirely in <strong>Rust</strong>, leveraging memory safety without a garbage collector for raw speed. Compiled with Apple Silicon native vector instructions (<code>target-cpu=native</code>) and optimized with the <strong>mimalloc</strong> memory allocator.</li>",
+    "<li><strong>Seeding (Minimizers):</strong> I bypassed standard O(N) k-mer hashing by implementing a <strong>sliding window minimizer algorithm</strong>. By only indexing the mathematically lowest hash in a given window, I guaranteed anchor matches while dropping the engine's RAM footprint by up to 90%.</li>",
+    "<li><strong>Bit-Packing:</strong> DNA only has 4 states (A, C, T, G). I compressed the data by representing each base in 2 bits, tightly packing 32-base chunks into single 64-bit integers. This allows the CPU to process entire sequences using binary operators in just a few clock cycles.</li>",
+    "<li><strong>Alignment (Dual Smith-Waterman):</strong> I implemented a bidirectional \"Seed and Extend\" algorithm with an <strong>X-Drop kill switch</strong>. It anchors on minimizers and runs a custom scoring matrix that survives small mutations but instantly terminates \"zombie\" threads when hitting random transposon noise.</li>",
+    "<li><strong>Memory Hack (Two-Pass Matrix):</strong> Standard Smith-Waterman creates a memory-crushing O(N x M) grid. I bypassed this using a sliding two-row array to find the peak score, followed by a localized traceback pass, mapping the sequences while keeping memory usage incredibly tiny.</li>",
+    "<li><strong>Deduplication (Spatial Hashing):</strong> Replaced an O(N^2) array comparison with a 1D spatial hashing grid using the high-speed <strong>FxHash</strong> algorithm. This grouped alignments into physical \"buckets,\" dropping billions of collision checks down to near-instant O(1) lookups.</li>",
+    "</ul>"
+  ],
+  "technologies": [
+    "Rust",
+    "Bioinformatics",
+    "Data Structures",
+    "Algorithm Design",
+    "High-Performance Computing (HPC)",
+    "Matplotlib / Python"
+  ],
+  "gallery": [
+    {
+      "image": "img/DNA/Thaliana-Lyrata.png",
+      "caption": "Arabidopsis thaliana vs. Arabidopsis lyrata",
+      "description": "<p>This plot maps millions of years of evolutionary divergence. The vertical white bands represent the boundaries between distinct chromosomes (or data scaffolds) in the reference file. The background 'static' is transposons and heavily mutated junk DNA. Despite this noise, my Seed-and-Extend algorithm successfully locked onto the conserved core genes, rendering them as the distinct diagonal paths weaving through the grid. You can visually track where chromosomes broke, shifted, or fused together.</p>"
+    },
+    {
+      "image": "img/DNA/Thaliana-Turnip.png",
+      "caption": "Whole Genome Triplication (Thaliana vs. Turnip)",
+      "description": "<p>This plot is the ultimate algorithmic stress test, visualizing an ancient <strong>Whole Genome Triplication</strong> event. Millions of years ago, the Turnip's ancestor duplicated its entire genome three times, then randomly deleted pieces of it over time (fractionation). If you draw a vertical line anywhere on this plot, it will intersect multiple scattered diagonal segments. This proves the engine successfully captured the 1-to-multi evolutionary shadow, where a single <em>Arabidopsis</em> region maps to several shattered fragments in the Turnip.</p>"
+    },
+    {
+      "image": "img/DNA/sam.png",
+      "caption": "Salmonella Typhi vs. Salmonella Typhimurium",
+      "description": "<p>Unlike the massive, noisy plant genomes, this compares two closely related bacterial strains. Because their genomes are so similar, the plot is incredibly clean, which highlights a massive structural mutation right in the center. The long diagonal line suddenly breaks and runs backward (top-left to bottom-right). This is a textbook <strong>genomic inversion</strong>—a massive chunk of the bacterial chromosome was physically severed and glued back in upside down. The lack of background dots shows that the strict Smith-Waterman penalty scores completely eliminated random noise.</p>"
+    }
+  ]
+}
